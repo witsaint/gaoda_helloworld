@@ -5,6 +5,7 @@ import Router from 'vue-router'
 import Index from './../views/index'
 import Home from './../views/home'
 import Who from './../views/who'
+import Me from './../views/me'
 Vue.use(Router)
 
 const router = new Router({
@@ -13,7 +14,7 @@ const router = new Router({
         {
             path: '/',
             component: Index,
-            redirect: '/home',
+            redirect: '/Me',
             meta: {requireAuth: true},
             children: [
                 {
@@ -24,6 +25,10 @@ const router = new Router({
                     path: 'who',
                     component: Who,
                     name: 'who'
+                },  {
+                    path: 'me',
+                    component: Me,
+                    name: 'Me'
                 }
             ]
         },

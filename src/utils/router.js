@@ -14,6 +14,7 @@ const router = new Router({
             path: '/',
             component: Index,
             meta: {requireAuth: true},
+             redirect: { name: 'Home' }
             children: [
                 {
                     path: '',

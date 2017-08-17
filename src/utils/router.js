@@ -14,7 +14,7 @@ const router = new Router({
         {
             path: '/',
             component: Index,
-            redirect: '/',
+            // redirect: '/',
             meta: {requireAuth: true},
             children: [
                 {

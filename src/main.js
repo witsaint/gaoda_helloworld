@@ -7,6 +7,7 @@ import router from './utils/router'
 import App from './App'
 import store from './utils/store'
 import ElementUI from 'element-ui'
+import { sync } from 'vuex-router-sync'
 // import 'element-ui/lib/theme-default/index.css'
 Vue.config.productionTip = false
 Vue.use(ElementUI)

@@ -1,5 +1,6 @@
 <template>
     <section class="show_body">
+        <el-button @click="goWho">who We Are</el-button>
         <label class="label" for="checkbox">witSaint  <br> <br> </label>
         <div class="checkbox-wrap">
             <input class="checkbox" id="checkbox" type="checkbox"><label class="firefly" for="checkbox">
@@ -26,6 +27,11 @@
     export default {
         data () {
             return {}
+        },
+        methods: {
+            goWho () {
+                this.$router.push('/who')
+            }
         }
     }
 </script>

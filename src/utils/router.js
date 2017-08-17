@@ -13,6 +13,7 @@ const router = new Router({
         {
             path: '/',
             component: Index,
+            redirect: '/home',
             meta: {requireAuth: true},
             children: [
                 {

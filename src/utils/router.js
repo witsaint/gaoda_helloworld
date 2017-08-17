@@ -16,7 +16,7 @@ const router = new Router({
             meta: {requireAuth: true},
             children: [
                 {
-                    path: 'home',
+                    path: '',
                     component: Home,
                     name: 'Home'
                 },  {
